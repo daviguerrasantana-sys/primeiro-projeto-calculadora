@@ -1,0 +1,50 @@
+<doctype HTML>
+    <html lang="pt-br">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Calculadora</title>
+            <link rel="stylesheet" href="Untitled-1.css">
+        </head>
+        <body>
+            <header>
+              <div class="cabesalho">
+                 <h1>Calculadora</h1>
+                  <h1><button class="mostHis" id="mostHis" onclick="Hist()">historico</button></h1>
+            </div>
+
+            </header>
+            <div class="box">
+                <div class="historico" id="histBox">
+                    
+                    <h2> historico </h1>
+                    <textarea type="text" class="historico1" id="historico"> </textarea>
+                    <p><button class="clearHis" id="clearHis" onclick="clearHist()"> clear </button></p>
+                </div>
+                
+                    <input type="text" placeholder="0" class="display" id="display">
+            <div class="teclado" >  
+                    <button class="btn"  id="clearBtn" onclick="clearDisplay()">C</button>
+                    <button class="btn"  id="divideBtn" onclick="appendToDisplay('/')">/</button>
+                    <button class="btn"  id="multiplyBtn" onclick="appendToDisplay('*')">*</button>
+                    <button class="btn"  id="subtractBtn" onclick="appendToDisplay('-')">-</button>
+                    <button class="btn"  id="addBtn" onclick="appendToDisplay('+')">+</button>
+                    <button class="btn"  id="btn" onclick="appendToDisplay('1')">1</button>
+                    <button class="btn"  id="btn" onclick="appendToDisplay('2')">2</button>
+                    <button class="btn"  id="btn" onclick="appendToDisplay('3')">3</button>
+                    <button class="btn"  id="btn" onclick="appendToDisplay('4')">4</button>
+                    <button class="btn"  id="btn" onclick="appendToDisplay('5')">5</button>
+                    <button class="btn"  id="btn" onclick="appendToDisplay('6')">6</button>
+                    <button class="btn"  id="btn" onclick="appendToDisplay('7')">7</button>
+                    <button class="btn"  id="btn" onclick="appendToDisplay('8')">8</button>
+                    <button class="btn"  id="btn" onclick="appendToDisplay('9')">9</button>
+                    <button class="btn"  id="btn" onclick="appendToDisplay('0')">0</button>
+                    <button class="btn"  id="equalsBtn" onclick="calculate()">=</button>
+
+            </div>
+            
+            </div>
+        
+           
+            <script src="Untitled-3.js"></script>
+        </body>
